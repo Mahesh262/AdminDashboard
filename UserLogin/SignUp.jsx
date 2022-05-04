@@ -15,7 +15,7 @@ const SignUp = () => {
       onSubmit:(values,e)=>{
          e.preventDefault()
       console.log("form",values)
-      // axios.post(" http://atologistinfotech.com/api/register.php",{values}).then(response=> console.log(response.status)).catch(error=>console.log(error))
+        axios.post(" http://atologistinfotech.com/api/register.php",{values}).then(response=> console.log(response.status)).catch(error=>console.log(error))
       },
       validate:(values)=>{
           let errors = {};
